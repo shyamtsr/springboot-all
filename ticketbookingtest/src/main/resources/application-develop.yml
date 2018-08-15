@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ticketBooking
+  datasource:
+    password: manager1
+    url: jdbc:mysql://localhost:3306/ticketBooking
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+      max-active: 15
+      max-idle: 44
+      max-wait: 33
+       
+    
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+   
